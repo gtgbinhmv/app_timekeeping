@@ -57,7 +57,7 @@ class ShiftCard extends StatelessWidget {
                   style: TextStyle(
                     color: const Color(0xFF0A66C2),
                     fontWeight: FontWeight.w600,
-                    fontSize: 15 * scale, // 🔹 tăng 5
+                    fontSize: 15 * scale,
                   ),
                 ),
               ),
@@ -90,7 +90,7 @@ class ShiftCard extends StatelessWidget {
                 "Trạng thái: $status",
                 style: TextStyle(
                   color: Colors.black54,
-                  fontSize: 15 * scale, // tăng 5
+                  fontSize: 15 * scale,
                 ),
               ),
               Row(

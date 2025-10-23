@@ -1,5 +1,6 @@
 import 'package:app_timekeeping/data/providers/time_provider.dart';
 import 'package:app_timekeeping/ui/core/widgets/heading_widget.dart';
+import 'package:app_timekeeping/ui/features/timekeeping/widgets/TextField_widget.dart';
 import 'package:app_timekeeping/ui/features/timekeeping/widgets/location_card.dart';
 import 'package:app_timekeeping/utils/time_helper.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,7 @@ class TimekeepingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    TextEditingController noteController = TextEditingController();
     final scale = AppScale.of(context);
     final shiftInfo =
         WorkShiftHelper.getCurrentShiftInfo(); // Lấy dữ liệu ca làm
@@ -51,7 +53,9 @@ class TimekeepingScreen extends ConsumerWidget {
               SizedBox(height: 10 * scale),
               HeadingWidget(header: "Vị trí hiện tại", size: 15 * scale),
               LocationCard(),
-              SizedBox(height: 80 * scale),
+              SizedBox(height: 10 * scale),
+              HeadingWidget(header: "Ghi chú", size: 15 * scale),
+              TextfieldWidget(controller: noteController),
             ],
           ),
         ),

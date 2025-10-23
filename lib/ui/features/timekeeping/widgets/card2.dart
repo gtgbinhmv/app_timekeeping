@@ -25,7 +25,7 @@ class Card2 extends StatelessWidget {
         borderRadius: BorderRadius.circular(17 * scale),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: AppColor.Hex0D000000,
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -81,7 +81,7 @@ Widget _buildButton(IconData icon, String text, double scale) {
         horizontal: 15 * scale,
         vertical: 7 * scale,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: AppColor.hexFFFFFF,
       elevation: 0,
     ),
   );

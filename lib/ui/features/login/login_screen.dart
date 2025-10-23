@@ -37,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen>
 
   @override
   Widget build(BuildContext context) {
-    final s = AppScale.of(context); // ✅ lấy hệ số scale 1 dòng duy nhất
+    final s = AppScale.of(context); //lấy hệ số scale 1 dòng duy nhất
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(

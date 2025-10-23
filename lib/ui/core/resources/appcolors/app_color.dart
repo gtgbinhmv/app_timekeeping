@@ -13,4 +13,7 @@ class AppColor {
   //gradian login
   static const hexE3F2FD = Color(0xFFE3F2FD);
   static const hexBBDEFB = Color(0xFFBBDEFB);
+
+  //color shadow
+  static const Hex0D000000 = Color(0x0D000000);
 }
